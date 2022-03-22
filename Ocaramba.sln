@@ -1,0 +1,96 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29728.190
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Ocaramba", "Ocaramba\Ocaramba.csproj", "{A357D58B-61BF-4E84-94FF-39DE8D2B7834}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{844D0B1B-1209-4D4F-BAD4-DA68980CB4DC}"
+	ProjectSection(SolutionItems) = preProject
+		.gitignore = .gitignore
+		appveyor.yml = appveyor.yml
+		Dockerfile = Dockerfile
+		ExecutingTestsOnLinux.ps1 = ExecutingTestsOnLinux.ps1
+		ExecutingTestsOnWindows.ps1 = ExecutingTestsOnWindows.ps1
+		LICENSE = LICENSE
+		README.md = README.md
+	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Ocaramba.Tests.PageObjects", "Ocaramba.Tests.PageObjects\Ocaramba.Tests.PageObjects.csproj", "{FDEF8055-650C-42CD-92F0-599AD0F8A331}"
+	ProjectSection(ProjectDependencies) = postProject
+		{A3E0113A-9AB8-4294-B1E3-EFB17614972A} = {A3E0113A-9AB8-4294-B1E3-EFB17614972A}
+	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Ocaramba.Tests.Angular", "Ocaramba.Tests.Angular\Ocaramba.Tests.Angular.csproj", "{C86D2425-E4F9-484D-B4E8-C9E3BE4078B4}"
+	ProjectSection(ProjectDependencies) = postProject
+		{A3E0113A-9AB8-4294-B1E3-EFB17614972A} = {A3E0113A-9AB8-4294-B1E3-EFB17614972A}
+	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Ocaramba.Tests.NUnit", "Ocaramba.Tests.NUnit\Ocaramba.Tests.NUnit.csproj", "{088A0655-E4BF-4EC9-9755-A3EF2219BCEC}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Ocaramba.UnitTests", "Ocaramba.UnitTests\Ocaramba.UnitTests.csproj", "{4F98F98A-B51C-4138-9383-CC57A0A31E12}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Ocaramba.Tests.CloudProviderCrossBrowser", "Ocaramba.Tests.CloudProviderCrossBrowser\Ocaramba.Tests.CloudProviderCrossBrowser.csproj", "{85FA1DBA-1EF6-4336-BD68-24E25B6111D0}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Ocaramba.Tests.MsTest", "Ocaramba.Tests.MsTest\Ocaramba.Tests.MsTest.csproj", "{A9A0CF3C-E5CA-4AF3-B06A-B37B32AD1FF0}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Ocaramba.Tests.Features", "Ocaramba.Tests.Features\Ocaramba.Tests.Features.csproj", "{110A82E1-F2A1-4BA9-B808-D2FBE2EAD94A}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Ocaramba.Tests.Xunit", "Ocaramba.Tests.Xunit\Ocaramba.Tests.Xunit.csproj", "{6714E541-3DF3-4836-BCB7-17F12993E185}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OcarambaLite", "OcarambaLite\OcarambaLite.csproj", "{A3E0113A-9AB8-4294-B1E3-EFB17614972A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A357D58B-61BF-4E84-94FF-39DE8D2B7834}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A357D58B-61BF-4E84-94FF-39DE8D2B7834}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A357D58B-61BF-4E84-94FF-39DE8D2B7834}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A357D58B-61BF-4E84-94FF-39DE8D2B7834}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FDEF8055-650C-42CD-92F0-599AD0F8A331}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FDEF8055-650C-42CD-92F0-599AD0F8A331}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FDEF8055-650C-42CD-92F0-599AD0F8A331}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FDEF8055-650C-42CD-92F0-599AD0F8A331}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C86D2425-E4F9-484D-B4E8-C9E3BE4078B4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C86D2425-E4F9-484D-B4E8-C9E3BE4078B4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C86D2425-E4F9-484D-B4E8-C9E3BE4078B4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C86D2425-E4F9-484D-B4E8-C9E3BE4078B4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{088A0655-E4BF-4EC9-9755-A3EF2219BCEC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{088A0655-E4BF-4EC9-9755-A3EF2219BCEC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{088A0655-E4BF-4EC9-9755-A3EF2219BCEC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{088A0655-E4BF-4EC9-9755-A3EF2219BCEC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4F98F98A-B51C-4138-9383-CC57A0A31E12}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4F98F98A-B51C-4138-9383-CC57A0A31E12}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4F98F98A-B51C-4138-9383-CC57A0A31E12}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4F98F98A-B51C-4138-9383-CC57A0A31E12}.Release|Any CPU.Build.0 = Release|Any CPU
+		{85FA1DBA-1EF6-4336-BD68-24E25B6111D0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{85FA1DBA-1EF6-4336-BD68-24E25B6111D0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{85FA1DBA-1EF6-4336-BD68-24E25B6111D0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{85FA1DBA-1EF6-4336-BD68-24E25B6111D0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A9A0CF3C-E5CA-4AF3-B06A-B37B32AD1FF0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A9A0CF3C-E5CA-4AF3-B06A-B37B32AD1FF0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A9A0CF3C-E5CA-4AF3-B06A-B37B32AD1FF0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A9A0CF3C-E5CA-4AF3-B06A-B37B32AD1FF0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{110A82E1-F2A1-4BA9-B808-D2FBE2EAD94A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{110A82E1-F2A1-4BA9-B808-D2FBE2EAD94A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{110A82E1-F2A1-4BA9-B808-D2FBE2EAD94A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{110A82E1-F2A1-4BA9-B808-D2FBE2EAD94A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6714E541-3DF3-4836-BCB7-17F12993E185}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6714E541-3DF3-4836-BCB7-17F12993E185}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6714E541-3DF3-4836-BCB7-17F12993E185}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6714E541-3DF3-4836-BCB7-17F12993E185}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A3E0113A-9AB8-4294-B1E3-EFB17614972A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A3E0113A-9AB8-4294-B1E3-EFB17614972A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A3E0113A-9AB8-4294-B1E3-EFB17614972A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A3E0113A-9AB8-4294-B1E3-EFB17614972A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {DA1E697C-541D-48D9-B421-5BECA137B41E}
+	EndGlobalSection
+EndGlobal
